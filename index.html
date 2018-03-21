@@ -15,30 +15,22 @@
     <!-- Google fonts	-->
   	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
     <link href="home.css" rel="stylesheet" type="text/css" />		<!-- CSS link -->
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1" >
+	
 
 
     <!-- JQUERY LIBRARY   -->
    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<style>
+		@media screen and (max-width: 500px){
+			body{
+				width: 100%;
+			}
+		}
+	</style>
 
-
-    <!-- JavaScriot  -->
-    <script type="text/javascript">
-    	var person = prompt("Please enter your name", "pawan kalyan");
-    	if (person != null) {
-    	alert('Hi ' + person + '! Welcome, click OK to continue.');
-    	}
-    	function changeTitle(){
-    		var change = document.querySelector("#logo");
-    		change.innerHTML = "this is a new website";
-    	}
-
-    	$(document).ready(function(){
-    		$("#button1").hover(function(){
-    			alert("This will chnage the heading!");
-    		});
-    	})
-
-    </script>
 
 </head>
 
@@ -128,5 +120,23 @@
     			</a>
 </div>
 
+	<!-- JavaScriot  -->
+    <script type="text/javascript">
+    	var person = prompt("Please enter your name", "pawan kalyan");
+    	if (person != null) {
+    	alert('Hi ' + person + '! Welcome, click OK to continue.');
+    	}
+    	function changeTitle(){
+    		var change = document.querySelector("#logo");
+    		change.innerHTML = "this is a new website";
+    	}
+
+    	$(document).ready(function(){
+    		$("#button1").hover(function(){
+    			alert("This will chnage the heading!");
+    		});
+    	})
+
+    </script>
 </body>
 </html>
